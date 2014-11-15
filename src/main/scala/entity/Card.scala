@@ -3,7 +3,6 @@ package cmp.entity;
 import cmp.entity.Suit._
 
 case class Card(value: Int, suit: Suit) {
-	def methodTest(msg: String) = println(msg)
 	override def toString = Card.names(value) + suit.toString 
 }
 
