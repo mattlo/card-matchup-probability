@@ -1,8 +1,10 @@
 package cmp.entity
 
-class Suit(val value: Int)
+object Suit extends Enumeration {
+	type Suit = Value
 
-object Suit {
-	val List(diamond, club, heart, spade) = (0 to 3).toList
-	def apply(value: Int) = new Suit(value)
+	val Diamond = Value(0, "D")
+	val Club = Value(1, "C")
+	val Heart = Value(2, "H")
+	val Spade = Value(3, "S")
 }
